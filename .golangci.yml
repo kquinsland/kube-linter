@@ -16,6 +16,7 @@ linters:
     # - dogsled
     # - dupl
     # - errcheck
+    - errorlint
     # - funlen
     # - gochecknoglobals
     # - gochecknoinits
@@ -34,7 +35,7 @@ linters:
     # - interfacer
     # - lll
     # - maligned
-    # - misspell
+    - misspell
     - nakedret
     # - nestif
     - nolintlint
@@ -59,11 +60,8 @@ linters:
       disabled-checks:
         - dupImport # https://github.com/go-critic/go-critic/issues/845
         - commentFormatting
-        - octalLiteral
         - unnamedResult
-        - unnecessaryDefer
         - importShadow
-        - emptyStringTest
         - hugeParam
         - rangeValCopy
 
